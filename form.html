@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create a form</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        body{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h2><center><u>welcome to shaba's dhaba:</u></center></h2>
+    <h3>Information:</h3>
+    <form>
+        <label for="name">Your name:
+            <input id="name" type="text" placeholder="YOUR NAME">
+        </label>
+       
+        <label for="email">Your email:
+            <input id="email" type="email" placeholder="YOUR EMAIL">
+        </label>
+        <label for="phone">Your number:
+            <input id="phone" type="number" placeholder="YOUR PHONE NUMBER ">
+        </label>
+        <h3>Order:</h3>
+        <fieldset>
+            <legend>pick on pitha:</legend>
+            <label for="puya">
+                <input type="radio" name="pitha" id="Puya">
+             Puya</label>
+            <label for="vafa">
+                <input type="radio" name="pitha" id="vafa">
+                Vafa</label>
+            <label for="chitoy">
+                <input type="radio" name="pitha" id="chitoy">
+               chitoy</label>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>select one or more vorta:</legend>
+            <label for="macer votta">
+                <input type="checkbox" name="votta" id="macer votta">
+                macer votta</label>
+            <label for="moric votta">
+                <input type="checkbox" name="votta" id="moric votta">
+                moric votta</label>
+            <label for="sorisa  votta">
+                <input type="checkbox" name="votta" id="sorisa votta">
+                sorisa votta</label>
+            <label for="alur votta">
+                <input type="checkbox" name="votta" id="alur votta">
+                alur votta</label>
+            <label for="sutkir votta">
+                <input type="checkbox" name="votta" id="sutkir votta">
+                sutkir votta</label>
+        </fieldset>
+        <fieldset>
+            <legend>special Instruction:</legend>
+            <textarea name="Write your problem" id="text" cols="50" rows="3"></textarea>
+        </fieldset>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
